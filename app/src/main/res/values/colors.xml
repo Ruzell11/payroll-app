@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Colors -->
+    <color name="black">#FF000000</color> <!-- Standard Black -->
+    <color name="white">#FFFFFFFF</color> <!-- White for lighter text -->
+    <color name="purple">#512DA8</color>  <!-- Deep Purple (more vibrant) -->
+    <color name="text_grey">#4E4E4E</color> <!-- Dark Gray for text (alternative to black) -->
+
+    <!-- Background Colors -->
+    <color name="teal_background">#4DB6AC</color> <!-- Teal, inspired by the image background -->
+    <color name="light_gray">#F5F5F5</color> <!-- Light gray for a subtle neutral background -->
+    <color name="soft_mint">#A7FFEB</color> <!-- Soft Mint for a fresh look -->
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="0dp"
+    android:background="@color/teal_background">
+
+    <!-- Image at the top of the form -->
+
+    <!-- CardView containing the form -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="375dp"
+        android:layout_height="240dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/login1" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Login title -->
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <!-- Email input field -->
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_grey"
+                android:elevation="2dp"
+                android:backgroundTint="@color/light_gray"
+                android:layout_gravity="center" />
+
+            <!-- Password input field -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="16dp"
+                android:padding="12dp"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:textColorHint="@color/text_grey"
+                android:elevation="2dp"
+                android:backgroundTint="@color/light_gray"
+                android:layout_gravity="center" />
+
+            <!-- Login button -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:layout_marginTop="32dp"
+                android:padding="12dp"
+                android:layout_gravity="center"
+                android:elevation="4dp"
+                android:textStyle="bold"
+          />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Signup Text Below -->
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account? Sign up"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
